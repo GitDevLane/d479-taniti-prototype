@@ -296,7 +296,7 @@ body {
 /* Info strip */
 .info-strip {
   width: 100%;
-  min-height: 420px;
+  min-height: 340px;
   padding: 90px 24px;
   text-align: center;
   color: #ffffff;
