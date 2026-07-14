@@ -24,7 +24,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(187, 196, 203, 0.55);
+  background: rgba(187, 196, 203, 0.65);
   backdrop-filter: blur(8px);
   border-bottom: 2px solid rgba(46, 140, 140, 0.75);
 }
@@ -600,7 +600,7 @@ body {
 }
 
 /* -----------------------------------
-   FAQ page responsive fixes
+    Responsive FAQ page
 ----------------------------------- */
 
 @media (max-width: 850px) {
@@ -868,6 +868,55 @@ body {
   }
 
   .lodging-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -----------------------------------
+   Food & Dining page
+----------------------------------- */
+
+.dining-hero {
+  background:
+    linear-gradient(rgba(8, 26, 40, 0.35), rgba(8, 26, 40, 0.35)),
+    url("images/dining.jpg");
+  background-size: cover;
+  background-position: center 60%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.dining-grid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.dining-feature {
+  background:
+    linear-gradient(rgba(8, 26, 40, 0.35), rgba(8, 26, 40, 0.35)),
+    url("images/dinner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Responsive Food & Dining page */
+@media (max-width: 1000px) {
+  .dining-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .dining-hero {
+    background-attachment: scroll;
+  }
+
+  .dining-grid {
     grid-template-columns: 1fr;
   }
 }
