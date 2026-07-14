@@ -24,7 +24,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(187, 196, 203, 0.45);
+  background: rgba(187, 196, 203, 0.55);
   backdrop-filter: blur(8px);
   border-bottom: 2px solid rgba(46, 140, 140, 0.75);
 }
@@ -637,5 +637,140 @@ body {
   .cta-content {
     align-items: flex-start;
     flex-direction: column;
+  }
+}
+
+/* -----------------------------------
+   Transportation page
+----------------------------------- */
+
+.transportation-hero {
+  background:
+    linear-gradient(rgba(8, 26, 40, 0.35), rgba(8, 26, 40, 0.35)),
+    url("images/transportation.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.content-section {
+  width: 100%;
+  padding: 80px 48px;
+  background: #ffffff;
+}
+
+.transport-grid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.detail-card {
+  min-height: 260px;
+  padding: 30px;
+  border-radius: 24px;
+  background: #f7f1e3;
+  color: #123047;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.09);
+  border: 1px solid rgba(18, 48, 71, 0.08);
+}
+
+.detail-card h3 {
+  margin: 12px 0 12px;
+  color: #1f5f8b;
+  font-size: 1.35rem;
+}
+
+.detail-card p {
+  margin: 0;
+  color: #333333;
+  line-height: 1.65;
+}
+
+.detail-icon {
+  font-size: 2rem;
+}
+
+.highlight-card {
+  border: 2px solid rgba(46, 140, 140, 0.75);
+  background: #f3fbfb;
+}
+
+.split-info-section {
+  width: 100%;
+  padding: 80px 38px;
+  background:
+    linear-gradient(rgba(8, 26, 40, 0.35), rgba(8, 26, 40, 0.35)),
+    url("images/transportation.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+
+.split-info-content {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.split-info-content h2 {
+  margin: 0 0 16px;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  color: #ffffff;
+}
+
+.split-info-content p {
+  color: #f7f1e3;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.trip-tip-box {
+  padding: 32px;
+  background: rgba(10, 34, 52, 0.72);
+  border: 2px solid rgba(46, 140, 140, 0.75);
+  border-radius: 22px;
+  backdrop-filter: blur(8px);
+}
+
+.trip-tip-box h3 {
+  margin-top: 0;
+  color: #ffffff;
+}
+
+/* Responsive transportation page */
+@media (max-width: 1000px) {
+  .transport-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .split-info-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .transportation-hero {
+    background-attachment: scroll;
+  }
+
+  .content-section {
+    padding: 64px 22px;
+  }
+
+  .transport-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .split-info-section {
+    padding: 64px 22px;
   }
 }
