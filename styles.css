@@ -44,6 +44,11 @@ body {
   font-weight: 700;
   text-decoration: none;
   white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.logo:hover {
+  color: #1f5f8b;
 }
 
 .nav-links {
@@ -782,9 +787,9 @@ body {
 .things-hero {
   background:
     linear-gradient(rgba(8, 26, 40, 0.35), rgba(8, 26, 40, 0.35)),
-    url("images/things-to-do.jpg");
+    url("images/activites.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -800,10 +805,11 @@ body {
 .things-feature {
   background:
     linear-gradient(rgba(8, 26, 40, 0.35), rgba(8, 26, 40, 0.35)),
-    url("images/hero-image.jpg");
+    url("images/beach-to-do.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* Responsive Things to Do page */
