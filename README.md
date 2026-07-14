@@ -8,7 +8,7 @@ This repository contains an interactive website prototype for the D479 User Expe
 ## Live Prototype
 
 GitHub Pages URL:  
-https://GitDevLane.github.io/d479-taniti-prototype/
+https://github.com/GitDevLane/d479-taniti-prototype
 
 ## Project Purpose
 
